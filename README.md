@@ -3,6 +3,7 @@
 [![Dependency Status](https://gemnasium.com/badges/github.com/GeoHealth/hubot-dynamic-log-level.svg)](https://gemnasium.com/github.com/GeoHealth/hubot-dynamic-log-level)
 [![Code Climate](https://codeclimate.com/github/GeoHealth/hubot-dynamic-log-level/badges/gpa.svg)](https://codeclimate.com/github/GeoHealth/hubot-dynamic-log-level)
 [![Test Coverage](https://codeclimate.com/github/GeoHealth/hubot-dynamic-log-level/badges/coverage.svg)](https://codeclimate.com/github/GeoHealth/hubot-dynamic-log-level/coverage)
+[![Issue Count](https://codeclimate.com/github/GeoHealth/hubot-dynamic-log-level/badges/issue_count.svg)](https://codeclimate.com/github/GeoHealth/hubot-dynamic-log-level)
 
 ---
 
