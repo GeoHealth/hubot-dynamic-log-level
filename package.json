@@ -1,0 +1,31 @@
+{
+  "name": "hubot-dynamic-log-level",
+  "version": "1.0.0",
+  "description": "Dynamically change the log level of hubot",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geoHealth/hubot-dynamic-log-level.git"
+  },
+  "keywords": [
+    "hubot",
+    "log",
+    "level",
+    "dynamic"
+  ],
+  "author": "seza443",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geoHealth/hubot-dynamic-log-level/issues"
+  },
+  "homepage": "https://github.com/geoHealth/hubot-dynamic-log-level#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coffee-script": "^1.12.4",
+    "hubot-test-helper": "^1.5.1",
+    "mocha": "^3.2.0"
+  }
+}
