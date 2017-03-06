@@ -5,6 +5,7 @@ install:
   - npm install
   - npm install -g codeclimate-test-reporter
 after_success:
+  - npm run report-coverage
   - sed -i 's/^SF:.*\/(.*\.coffee)/SF:\1/g' coverage/lcov.info
   - codeclimate-test-reporter < coverage/coverage.lcov
 cache:
