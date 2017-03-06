@@ -4,7 +4,8 @@
   "description": "Dynamically change the log level of hubot",
   "main": "index.coffee",
   "scripts": {
-    "test": "mocha --compilers coffee:coffee-script/register tests"
+    "test": "mocha --compilers coffee:coffee-script/register --require coffee-coverage/register-istanbul tests",
+    "report-coverage": "./node_modules/.bin/istanbul report"
   },
   "repository": {
     "type": "git",
@@ -24,8 +25,10 @@
   "homepage": "https://github.com/geoHealth/hubot-dynamic-log-level#readme",
   "devDependencies": {
     "chai": "^3.5.0",
+    "coffee-coverage": "^2.0.1",
     "coffee-script": "^1.12.4",
     "hubot-test-helper": "^1.5.1",
+    "istanbul": "^0.4.5",
     "mocha": "^3.2.0"
   }
 }
