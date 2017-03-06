@@ -1,8 +1,12 @@
 language: node_js
 node_js:
   - "6"
-  - "5"
 install:
+  - npm install
   - npm install -g codeclimate-test-reporter
 after_success:
+  - sed -i 's/^SF:.*\/(.*\.coffee)/SF:\1/g' coverage/lcov.info
   - codeclimate-test-reporter < coverage/coverage.lcov
+cache:
+  directories:
+  - node_modules

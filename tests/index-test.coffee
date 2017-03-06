@@ -47,3 +47,26 @@ describe 'log_level=', ->
 
     it 'updates the current log level of hubot', ->
       expect(room.robot.logger.level).to.eql(7)
+
+  context 'user says log_level=default to hubot', ->
+    beforeEach ->
+      room.user.say 'alice', 'hubot log_level=default'
+
+    it 'replies "Current log level is info" to user', ->
+      expect(room.messages).to.eql [
+        ['alice', 'hubot log_level=default']
+        ['hubot', 'Current log level is info']
+      ]
+
+    it 'updates the current log level of hubot', ->
+      expect(room.robot.logger.level).to.eql(6)
+
+  context 'user says log_level=notvalid to hubot', ->
+    beforeEach ->
+      room.user.say 'alice', 'hubot log_level=notvalid'
+
+    it 'replies "Unknown level notvalid" to user', ->
+      expect(room.messages).to.eql [
+        ['alice', 'hubot log_level=notvalid']
+        ['hubot', 'Unknown level notvalid']
+      ]
